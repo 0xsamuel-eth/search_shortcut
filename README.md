@@ -11,7 +11,7 @@ ___
 ```
 git clone https://github.com/0xsamuel-eth/search_shortcut.git
 cd search_shortcut
-~~pip3 install -r requirements.txt~~
+pip3 install -r requirements.txt
 ```
 
 or `pip`, whichever one works for you.
