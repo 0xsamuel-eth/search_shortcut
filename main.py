@@ -34,8 +34,11 @@ def create_query():
     return ' '.join(query)
 
 def create_url():
-    return url + create_query() + create_filter()
+    if len(sys.argv[1:]) == 0:
+        print('Error: Please enter a valid search query')
+    else:
+        final_url = url + create_query() + create_filter()
+        webbrowser.get(chrome_path).open(final_url)
 
 print(create_url())
 
-# webbrowser.get(chrome_path).open(url)
