@@ -25,13 +25,16 @@ def create_filter():
         filter += 'site:' + website
         if index == len(valid_websites) - 1:
             filter += ')'
+        else:
+            filter += ' OR '
+    return filter
 
 def create_query():
     query = sys.argv[1:]
     return ' '.join(query)
 
 def create_url():
-    return url + create_query()
+    return url + create_query() + create_filter()
 
 print(create_url())
 
