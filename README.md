@@ -26,6 +26,12 @@ ___
     ```
 
 3. Add shortcut to command line
+   ```
+    vim ~/.bashrc
+    alias s='python3 ~/Documents/GitHub/search_shortcut/main.py'
+    source ~/.bashrc
+
+    ```
 ___
 ## Usage
 Open Terminal and run:
