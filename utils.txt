@@ -1,0 +1,5 @@
+To create unix shortcut
+
+# vim ~/.bashrc
+# alias s='python3 ~/Documents/GitHub/search_shortcut/main.py'
+# source ~/.bashrc

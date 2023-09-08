@@ -41,4 +41,3 @@ def create_url():
         webbrowser.get(chrome_path).open(final_url)
 
 print(create_url())
-
